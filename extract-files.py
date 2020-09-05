@@ -32,6 +32,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/STFlashTool': blob_fixup()
         .add_needed('libbase_shim.so'),
 
+    'vendor/etc/libnfc-nci.conf': blob_fixup()
+       .regex_replace('/data/nfc', '/data/vendor/nfc'),
+
     'vendor/lib64/hw/audio.primary.bengal.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
 
