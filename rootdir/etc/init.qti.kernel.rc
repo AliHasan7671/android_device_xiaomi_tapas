@@ -47,8 +47,6 @@ on early-init
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
 
 on post-fs
-    wait_for_prop vendor.all.modules.ready 1
-
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
