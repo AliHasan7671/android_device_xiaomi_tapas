@@ -29,10 +29,6 @@ def blob_fixup_test_flag(
 
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .remove_needed('android.hidl.base@1.0.so')
-        .add_needed('libinput_shim.so'),
-
     'vendor/lib/hw/audio.primary.bengal.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
 
@@ -51,17 +47,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
 
-    'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
-        .add_line_if_missing('gettid: 1'),
-
     'vendor/etc/seccomp_policy/qms.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
-
-    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-
-    'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
 }
 
 module = ExtractUtilsModule(

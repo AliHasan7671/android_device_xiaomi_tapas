@@ -65,10 +65,6 @@ persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# Wi-Fi Display
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # WLAN
 ro.hardware.wlan.chip=wcn3950
 ro.hardware.wlan.dbs=0
