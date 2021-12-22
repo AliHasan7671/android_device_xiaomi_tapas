@@ -45,6 +45,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a9
 
 # Audio
+$(call soong_config_set, android_hardware_audio, run_64bit, true)
+
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
@@ -58,9 +60,7 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Boot control
-SOONG_CONFIG_NAMESPACES += ufsbsg
-SOONG_CONFIG_ufsbsg += ufsframework
-SOONG_CONFIG_ufsbsg_ufsframework := bsg
+$(call soong_config_set, ufsbsg, ufsframework, bsg)
 
 # Display
 TARGET_SCREEN_DENSITY := 440
