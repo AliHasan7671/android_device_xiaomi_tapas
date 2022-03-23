@@ -100,6 +100,7 @@ BOARD_BOOTCONFIG := \
 BOARD_KERNEL_CMDLINE := \
     rcu_nocbs=all \
     rcutree.enable_rcu_lazy=1 \
+    disable_dma32=on
 
 # Kernel prebuilt
 TARGET_KERNEL_ARCH := arm64
