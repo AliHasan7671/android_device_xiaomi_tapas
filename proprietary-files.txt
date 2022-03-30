@@ -1114,14 +1114,6 @@ vendor/etc/st21nfc_conf.txt
 vendor/lib64/libstfactory-vendor.so
 vendor/lib64/nfc_nci.st21nfc.st.so
 
-# OMX
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libQcelp13SwCodec.so
-vendor/lib64/libdsd2pcm.so
-
 # Perf
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.limits@1.2-service

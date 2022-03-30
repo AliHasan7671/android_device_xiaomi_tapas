@@ -227,6 +227,7 @@ persist.log.tag.vendor.qti.bluetooth@1.0-ibs_handler=S
 
 # Media
 vendor.mm.enable.qcom_parser=16711663
+vendor.media.omx=0
 
 # Netflix
 vendor.netflix.bsp_rev=Q6115-31409-1
