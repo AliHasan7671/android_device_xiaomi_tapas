@@ -17,6 +17,8 @@
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="config_hide_mms_apn" value="false" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <!-- Set LTE+ threshold bandwidth to 0 by default -->
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
         <map name="apn_default_values_strings_array">
             <string name="protocol">IPV4V6</string>
             <string name="roaming_protocol">IPV4V6</string>
