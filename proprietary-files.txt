@@ -986,8 +986,6 @@ vendor/lib64/libqtikeymint.so
 
 # Listen
 vendor/etc/microphone_characteristics.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
 vendor/lib64/hw/sound_trigger.primary.bengal.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
