@@ -414,6 +414,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/bengal/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
@@ -440,8 +445,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.network-V1-ndk.vendor \
     android.hardware.radio.sim-V1-ndk.vendor \
     android.hardware.radio.voice-V1-ndk.vendor \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite \
     librmnetctl
 
 PRODUCT_PACKAGES += \
