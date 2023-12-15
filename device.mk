@@ -527,6 +527,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     android.hardware.wifi.hostapd@1.0.vendor \
+    android.hardware.wifi.hostapd-V1-ndk.vendor \
+    android.hardware.wifi.supplicant-V1-ndk.vendor \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
