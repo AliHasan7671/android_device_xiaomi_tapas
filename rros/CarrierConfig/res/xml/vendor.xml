@@ -63,6 +63,8 @@
         <boolean name="config_update_multiparty_state" value="true" />
         <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true" />
         <boolean name="mtk_vt_over_wifi_check_volte_enable_bool" value="true" />
+        <!-- Enable LTE+ icon by default -->
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
     </carrier_config>
     <carrier_config sdk="26">
         <boolean name="vilte_data_is_metered_bool" value="false" />
