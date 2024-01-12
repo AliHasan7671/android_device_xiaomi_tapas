@@ -3,7 +3,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.xiaomi_topaz">
+    package="android.overlay.xiaomi_tapas">
 
     <overlay
         android:isStatic="true"

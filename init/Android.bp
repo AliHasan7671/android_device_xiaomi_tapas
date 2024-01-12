@@ -4,10 +4,10 @@
 //
 
 cc_library_static {
-    name: "init_topaz",
+    name: "init_tapas",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_topaz.cpp"],
+    srcs: ["init_tapas.cpp"],
     include_dirs: [
         "system/core/init",
         "system/libbase/include"

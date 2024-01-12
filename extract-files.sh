@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=topaz
+DEVICE=tapas
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

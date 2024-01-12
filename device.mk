@@ -560,4 +560,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/xiaomi/topaz/topaz-vendor.mk)
+$(call inherit-product, vendor/xiaomi/tapas/tapas-vendor.mk)

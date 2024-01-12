@@ -7,7 +7,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/xiaomi/topaz
+DEVICE_PATH := device/xiaomi/tapas
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -79,8 +79,8 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_topaz
-TARGET_RECOVERY_DEVICE_MODULES := init_topaz
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_tapas
+TARGET_RECOVERY_DEVICE_MODULES := init_tapas
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -258,4 +258,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/xiaomi/topaz/BoardConfigVendor.mk
+include vendor/xiaomi/tapas/BoardConfigVendor.mk

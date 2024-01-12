@@ -3,7 +3,7 @@ Copyright (C) 2023 The LineageOS Project
 Device configuration for Xiaomi Redmi Note 12 4G/12 4G NFC
 =========================================
 
-The Xiaomi Redmi Note 12 4G/12 4G NFC (codenamed _"tapas/topaz"_) is a mid-range smartphone from Xiaomi.
+The Xiaomi Redmi Note 12 4G/ 4G NFC (codenamed _"tapas/topaz"_) is a mid-range smartphone from Xiaomi.
 
 Redmi Note 12 4G was announced and released in March 2023.
 
