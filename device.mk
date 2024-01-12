@@ -10,11 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Enforce generic ramdisk allow list
+# Enable virtual A/B compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
 
-# Enable virtual AB with vendor ramdisk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -447,6 +447,7 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API
 BOARD_API_LEVEL := 33
+SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 
