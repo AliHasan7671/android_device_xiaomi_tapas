@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
+    <bool name="config_vendorWifi11axReadySupport">true</bool>
+
+    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-OWE) for softap -->
+    <bool name="config_vendor_wifi_softap_owe_supported">true</bool>
+
+    <!-- Wifi driver supports batched scan -->
+    <bool name="config_wifi_batched_scan_supported">true</bool>
+
+    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
+    <bool name="config_wifi_report_he_ready">true</bool>
+
+    <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
+         Note: This config is replacing the config_wifi_dual_band_support
+         since more bands may now be supported (such as 6GHz), the naming dual_band
+         is no longer indicative, and a separate config now exists for each band -->
+    <bool name="config_wifi5ghzSupport" translatable="false">true</bool>
+
+    <!-- boolean indicating whether or not to auto-upgrade band setting configuration to dual bands during cloud configuration restore when device supported -->
+    <bool name="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported" translatable="false">false</bool>
+
+    <!-- Boolean indicating whether the wifi chipset supports background scanning mechanism.
+         This mechanism allows the host to remain in suspend state and the dongle to actively
+         scan and wake the host when a configured SSID is detected by the dongle. This chipset
+         capability can provide power savings when wifi needs to be always kept on. -->
+    <bool name="config_wifi_background_scan_support" translatable="false">true</bool>
+
+    <!-- Integer indicating maximum hardware supported client number of soft ap -->
+    <integer name="config_wifiHardwareSoftapMaxClientCount" translatable="false">32</integer>
+
+    <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
+         channels this should be empty. Values is a comma separated channel string and/or channel
+         range string like '1-6,11'. -->
+    <string name="config_wifiSoftap2gChannelList" translatable="false"></string>
+
+    <!-- List of allowed channels in 5GHz band for softap. If the device doesn't want to restrict
+         channels this should be empty. Values is a comma separated channel string and/or channel
+         range string like '36-48,149'. -->
+    <string name="config_wifiSoftap5gChannelList" translatable="false"></string>
+
+    <!-- List of allowed channels in 6GHz band for softap. If the device doesn't want to restrict
+         channels this should be empty. Values is a comma separated channel string and/or channel
+         range string like '36-48,149'. -->
+    <string name="config_wifiSoftap6gChannelList" translatable="false"></string>
+
+    <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
+    <bool name="config_wifi_only_link_same_credential_configurations" translatable="false">false</bool>
+
+    <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
+    <bool name="config_wifi_softap_acs_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
+    <bool name="config_wifi_softap_sae_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AC for softap -->
+    <bool name="config_wifi_softap_ieee80211ac_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
+    <bool name="config_wifiSoftap6ghzSupported" translatable="false">true</bool>
+
+    <!-- Indicates that connected MAC randomization is supported on this device -->
+    <bool name="config_wifi_connected_mac_randomization_supported" translatable="false">true</bool>
+
+    <!-- Indicates that p2p MAC randomization is supported on this device -->
+    <bool name="config_wifi_p2p_mac_randomization_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
+    <bool name="config_wifiSoftapAcsIncludeDfs" translatable="false">true</bool>
+
+    <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
+    <integer name="config_wifiDelayDisconnectOnImsLostMs" translatable="false">1000</integer>
+
+    <!-- Enable Aware NDP interface selection on interface that already has network set up.
+     Note: the default AOSP Android does not support multiple networks on the same Aware NDI.
+     Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
+     -->
+    <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi" translatable="false">true</bool>
+
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport" translatable="false">true</bool>
+
+    <!-- Boolean indicating performing a partial initial scan is enabled -->
+    <bool name="config_wifiEnablePartialInitialScan" translatable="false">true</bool>
+
+    <!-- Boolean indicating connected frequency enhancement is enabled/disabled -->
+    <bool name="config_wifiConnectedFrequencyEnhancementEnabled" translatable="false">true</bool>
+
+    <!-- Wifi driver supports Beacon Protection for SoftAp -->
+    <bool name="config_vendor_softap_beacon_protection_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports Ocv for SoftAp -->
+    <bool name="config_vendor_softap_ocv_supported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX for softap -->
+    <bool name="config_wifiSoftapIeee80211axSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
+    <bool name="config_wifiSoftapHeSuBeamformerSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
+    <bool name="config_wifiSoftapHeSuBeamformeeSupported" translatable="false">true</bool>
+
+    <!-- Indicates that bridged AP mode is supported on this device -->
+    <bool name="config_wifiBridgedSoftApSupported" translatable="false">false</bool>
+
+    <!-- Configure wifi tcp buffersizes in the form:
+         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,524288,1048576,4194304</string>
+
+    <!-- Enable Make-Before-Break Wifi network switching.
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">false</bool>
+
+    <!-- Enable concurrent peer to peer + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">false</bool>
+
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled" translatable="false">false</bool>
+
+    <!-- Enable concurrent internet connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaMultiInternetConcurrencyEnabled" translatable="false">true</bool>
+
+    <!-- Indicates that SAE Hash-to-Element is supported on this device -->
+    <bool name="config_wifiSaeH2eSupported" translatable="false">true</bool>
+
+    <!-- Indicates whether or not the WLAN driver supports the NL80211_CMD_REG_CHANGE or
+         NL80211_CMD_WIPHY_REG_CHANGE events which indicate the current country code which is
+         being used by the WLAN driver. If the driver doesn't support these events
+         (configuration is `false`) then the driver must handle the setCountryCode request from
+         HAL as a blocking call. In such a case the country code will be applied
+         immediately after the country code is sent to the driver (if the method returns a
+         success). -->
+    <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
+
+    <!-- Indicates whether or not the Soft AP needs to be restarted when country code changed -->
+    <bool name="config_wifiForcedSoftApRestartWhenCountryCodeChanged" translatable="false">false</bool>
+
+    <!-- Indicates whether or not the network-centric QoS policy feature is enabled. -->
+    <bool name="config_wifiNetworkCentricQosPolicyFeatureEnabled" translatable="false">true</bool>
+
+</resources>
