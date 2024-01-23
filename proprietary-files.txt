@@ -1,4 +1,4 @@
-# All blobs below are extracted from topaz V14.0.7.0.TMGMIXM
+# Unpinned blobs from tapas_global-user 13 TKQ1.221114.001 V14.0.14.0.TMTMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
