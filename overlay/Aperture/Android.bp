@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "ApertureResTapas",
+    theme: "ApertureResTapas",
+    product_specific: true
+}
