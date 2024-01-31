@@ -51,7 +51,13 @@ PRODUCT_PACKAGES += \
     audio.primary.default:64 \
     audio.r_submix.default:64 \
     audio.usb.default:64 \
-    libbatterylistener:64
+    libbatterylistener:64 \
+    libaudiopreprocessing:64 \
+    libqcompostprocbundle:64 \
+    libqcomvisualizer:64 \
+    libqcomvoiceprocessing:64 \
+    libtinycompress:64 \
+    libvolumelistener:64
 
 PRODUCT_PACKAGES += \
     audioadsprpcd:64 \
