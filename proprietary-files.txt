@@ -185,7 +185,7 @@ vendor/lib64/soundfx/libvolumelistener.so
 # Battery
 vendor/bin/battery_stats
 vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
+vendor/etc/init/init.batterysecret.rc:|196eaa33df2da9f35f1c1d799663dcab12e73279
 vendor/etc/init/vendor.qti.battery_stats.rc
 
 # Bluetooth
@@ -542,8 +542,8 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/bin/charge_logger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/init.charge_logger.rc
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/etc/init/init.charge_logger.rc|97cb51da3967d5844b69de338507ff950c291504
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|674434781851bcb0baa3bcb110fee5417b81053e
 vendor/etc/charger_fstab.qti
 
 # CNE
@@ -1747,7 +1747,7 @@ vendor/lib64/libsubsystem_control.so
 # Thermal
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine-v2
-vendor/etc/init/init.mi_thermald.rc
+vendor/etc/init/init.mi_thermald.rc|7e0e15cf3915ed0a0ec4e2f1900ec7f5d28f3b0b
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1798,7 +1798,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/android.hardware.usb@1.2-service-qti
 vendor/bin/init.qcom.usb.sh
 vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
-vendor/etc/init/hw/init.qcom.usb.rc
+vendor/etc/init/hw/init.qcom.usb.rc|0586fa67b6e6377742baf1fb270e880b7bd90110
 vendor/etc/usb_compositions.conf
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml
 
