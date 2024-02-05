@@ -14,5 +14,5 @@ persist.wm.enable_remote_keyguard_animation=0
 vendor.media.target_variant=_khaje_v0
 
 # Radio
-ro.telephony.sim_slots.count=1
+ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
