@@ -39,11 +39,6 @@ on early-init
     start gki.modprobe
     start vendor.modprobe
 
-    # Mount tracefs in /sys/kernel/tracing as CONFIG_DEBUG_FS might be
-    # disabled and /sys/kernel/debug/tracing might not be available
-    mount tracefs tracefs /sys/kernel/tracing
-    chmod 0755 /sys/kernel/tracing
-
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
