@@ -577,6 +577,12 @@ should always be in sync with it -->
             </usecase>
         -->
            <usecase>
+                <name>PAL_STREAM_LOW_LATENCY</name>
+                <custom-config key="headphones-combo_custom_key">
+                    <snd_device_name>headphones-combo</snd_device_name>
+                </custom-config>
+           </usecase>
+           <usecase>
                <name>PAL_STREAM_VOICE_CALL</name>
                <priority>1</priority>
                <samplerate>48000</samplerate>
@@ -616,6 +622,12 @@ should always be in sync with it -->
                 </custom-config>
             </usecase>
         -->
+           <usecase>
+                <name>PAL_STREAM_LOW_LATENCY</name>
+                <custom-config key="headphones-combo_custom_key">
+                    <snd_device_name>headphones-combo</snd_device_name>
+                </custom-config>
+           </usecase>
            <usecase>
                <name>PAL_STREAM_DEEP_BUFFER</name>
                <custom-config key="cs-mode">
