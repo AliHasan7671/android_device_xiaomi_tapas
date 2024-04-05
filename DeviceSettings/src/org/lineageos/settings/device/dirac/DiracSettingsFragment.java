@@ -23,7 +23,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.Switch;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import androidx.preference.ListPreference;
@@ -33,12 +34,11 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.device.R;
 
 public class DiracSettingsFragment extends PreferenceFragment implements
-        OnPreferenceChangeListener, OnMainSwitchChangeListener {
+        OnPreferenceChangeListener, OnCheckedChangeListener {
 
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_HIFI = "dirac_hifi_pref";
@@ -125,7 +125,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         mSwitch.setChecked(isChecked);
 
         DiracUtils.setMusic(isChecked);
