@@ -21,8 +21,5 @@ type sysfs_msm_subsys, fs_type, sysfs_type;
 # Mac Address
 type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
 
-# Mlipay
-type ta_data_file, data_file_type, file_type;;
-
 # Thermal
 type thermal_data_file, data_file_type, file_type;

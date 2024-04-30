@@ -47,12 +47,6 @@ vendor.fps_hal_lc                        u:object_r:vendor_fp_prop:s0
 vendor.panel.display.                    u:object_r:vendor_fp_prop:s0
 vendor.sys.fp.                           u:object_r:vendor_fp_prop:s0
 
-# Mlipay
-persist.vendor.sys.pay.                  u:object_r:vendor_payment_security_prop:s0
-persist.vendor.sys.provision.status      u:object_r:vendor_payment_security_prop:s0
-vendor.sys.feature_state                 u:object_r:vendor_payment_security_prop:s0
-vendor.sys.rpmb_state                    u:object_r:vendor_payment_security_prop:s0
-
 # NFC
 persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
 
