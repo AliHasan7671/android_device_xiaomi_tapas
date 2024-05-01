@@ -1,6 +1,7 @@
 allow system_app proc_pagetypeinfo:file { read open getattr };
 allow system_app sysfs_zram:dir r_dir_perms;
 allow system_app sysfs_zram:file r_file_perms;
+allow system_app sysfs_thermal:file { rw_file_perms getattr };
 
 binder_call(system_app, hal_audio_default)
 binder_call(system_app, hal_health_default)
