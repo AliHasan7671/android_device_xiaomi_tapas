@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V3-ndk.vendor \
     android.hardware.light-V2-ndk.vendor \
     android.hardware.memtrack-V1-ndk.vendor \
+    vendor.qti.hardware.display.config-V5-ndk \
     vendor.qti.hardware.display.config-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
     vendor.qti.hardware.display.config-V3-ndk.vendor \
