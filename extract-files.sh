@@ -53,8 +53,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
@@ -62,6 +60,9 @@ function blob_fixup() {
             ;;
     esac
 }
+
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
