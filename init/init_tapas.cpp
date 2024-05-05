@@ -72,14 +72,14 @@ void load_redmi_properties(string hwname) {
 	    device_name = "tapas";
         model = "23021RAAEG";
         mod_device = "tapas_global";
-        fingerprint = "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V14.0.14.0.TMTMIXM:user/release-keys";
-        description = "tapas_global-user 13 TKQ1.221114.001 V816.0.2.0.UMTMIXM release-keys";
+        fingerprint = "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V816.0.4.0.UMTMIXM:user/release-keys";
+        description = "tapas_global-user 13 TKQ1.221114.001 V816.0.4.0.UMTMIXM release-keys";
     } else if (hwname == "topaz") {
         device_name = "topaz";
         model = "23021RAA2Y";
         mod_device = "topaz_global";
-        fingerprint = "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V14.0.14.0.TMTMIXM:user/release-keys";
-        description = "tapas_global-user 13 TKQ1.221114.001 V14.0.14.0.TMTMIXM release-keys";
+        fingerprint = "Redmi/topaz_global/topaz:13/TKQ1.221114.001/V816.0.4.0.UMGMIXM:user/release-keys";
+        description = "tapas_global-user 13 TKQ1.221114.001 V816.0.4.0.UMGMIXM release-keys";
     }
 
     // Set additional properties
