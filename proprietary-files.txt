@@ -1078,10 +1078,6 @@ vendor/lib64/vendor.qti.latency@2.2.so
 vendor/etc/init/ipa_fws.rc
 
 # IR
-vendor/bin/hw/android.hardware.ir-service.example
-vendor/bin/consumerird
-vendor/etc/init/android.hardware.ir-service.example.rc
-vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml
 vendor/lib64/hw/consumerir.qcom.so
 
 # Keymint
