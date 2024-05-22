@@ -834,4 +834,7 @@
         <item>53</item>
     </integer-array>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
+
 </resources>
