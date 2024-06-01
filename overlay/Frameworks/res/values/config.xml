@@ -29,7 +29,12 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -28 V 94 H 28 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M -24 51.75 a 24 24 0 1 0 48 0 a 24 24 0 1 0 -48 0</string>
+
+    <!--Whether the display cutout region of the main built-in display should be forced to
+        black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+        -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- Minimum screen brightness setting allowed by power manager.
          -2 is invalid so setting will resort to int value specified above.
