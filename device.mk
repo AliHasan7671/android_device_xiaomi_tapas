@@ -390,6 +390,7 @@ PRODUCT_PACKAGES += \
     WifiResTapas
 
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
 # Partitions
