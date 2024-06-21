@@ -33,7 +33,6 @@ public class MainSettingsFragment extends PreferenceFragment {
 
     private Preference mPrefRefreshRateInfo;
     private ListPreference mPrefRefreshRateConfig;
-    private SwitchPreference mPrefDcDimming;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -47,9 +46,6 @@ public class MainSettingsFragment extends PreferenceFragment {
         mPrefRefreshRateConfig = (ListPreference) findPreference(Constants.KEY_REFRESH_RATE_CONFIG);
         mPrefRefreshRateConfig.setOnPreferenceChangeListener(PrefListener);
         mPrefRefreshRateInfo = (Preference) findPreference(Constants.KEY_REFRESH_RATE_INFO);
-        mPrefDcDimming = (SwitchPreference) findPreference(Constants.KEY_DC_DIMMING);
-        mPrefDcDimming.setOnPreferenceChangeListener(PrefListener);
-        updateSummary();
     }
 
     private Preference.OnPreferenceChangeListener PrefListener =
@@ -60,8 +56,6 @@ public class MainSettingsFragment extends PreferenceFragment {
 
                 if (Constants.KEY_REFRESH_RATE_CONFIG.equals(key)) {
                     setHzConfig();
-                } else if (Constants.KEY_DC_DIMMING.equals(key)) {
-                    DisplayUtils.setDcDimmingStatus((boolean) value);
                 }
 
                 return true;
@@ -80,17 +74,6 @@ public class MainSettingsFragment extends PreferenceFragment {
 
     private void setHzConfig() {
         DisplayUtils.updateRefreshRateSettings(getContext());
-        updateSummary();
     }
 
-    private void updateSummary() {
-        if (mPrefRefreshRateConfig.getEntry() == null) {
-            mPrefRefreshRateConfig.setValueIndex(2);
-        }
-        Handler.getMain().post(() -> {
-            mPrefRefreshRateInfo.setSummary(
-                String.format(getString(R.string.current_refresh_rate_info),
-                    String.valueOf(Math.round(getCurrentMaxHz())), String.valueOf(Math.round(getCurrentMinHz()))));
-        });
-    }
 }

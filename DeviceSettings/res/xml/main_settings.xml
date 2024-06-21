@@ -27,22 +27,6 @@
             android:entries="@array/device_refresh_rates"
             android:entryValues="@array/device_refresh_rates_val"/>
 
-        <Preference
-            android:key="pref_refresh_rate_info"
-            android:icon="@drawable/ic_info"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="display_category"
-        android:title="@string/display_title">
-
-        <SwitchPreference
-            android:key="pref_dc_dimming"
-            android:title="@string/dc_dimming_title"
-            android:summary="@string/dc_dimming_summary"
-            android:icon="@drawable/ic_dc_dimming"/>
-
     </PreferenceCategory>
 
     <PreferenceCategory
