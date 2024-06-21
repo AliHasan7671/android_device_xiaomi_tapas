@@ -535,6 +535,7 @@ vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Charger
+system/bin/charger
 vendor/bin/charge_logger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
