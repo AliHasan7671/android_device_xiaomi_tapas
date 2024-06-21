@@ -23,10 +23,7 @@
     <!-- Refresh Rate tile -->
     <string name="refresh_rate_tile_title">Refresh Rate</string>
 
-    <string name="display_title">Display</string>
-    <string name="dc_dimming_title">DC Dimming</string>
-    <string name="dc_dimming_summary">Enable DC Dimming to avoid screen flickering on low brightness levels</string>
-
+    <!-- Sound -->
     <string name="sound_title">Sound</string>
 
     <string name="dirac_enable">Enable sound enhancement</string>
