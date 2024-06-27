@@ -61,9 +61,6 @@ SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := bengal
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 
@@ -106,7 +103,6 @@ BOARD_KERNEL_CMDLINE := \
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
-TARGET_KERNEL_VERSION := 5.15
 
 TARGET_NO_KERNEL_OVERRIDE := true
 INLINE_KERNEL_BUILDING := true
@@ -166,8 +162,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := bengal
-TARGET_BOARD_SUFFIX := _515
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
