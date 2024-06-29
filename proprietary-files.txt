@@ -102,6 +102,8 @@ vendor/lib64/libqtigefar.so
 vendor/lib64/libsndcardparser.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
+vendor/bin/hw/android.hardware.audio.service_64
+vendor/etc/init/android.hardware.audio.service_64.rc
 
 # Audio Configs
 odm/etc/audio_policy_engine_configuration_mi.xml:odm/etc/audio_policy_engine_configuration.xml
