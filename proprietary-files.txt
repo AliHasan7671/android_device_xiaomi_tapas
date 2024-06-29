@@ -437,6 +437,8 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_ldc.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libxmi_high_dynamic_range.so
+system/lib/libpiex.so:vendor/lib/libpiex.so
+system/lib64/libpiex.so:vendor/lib64/libpiex.so
 
 # Camera Configs
 odm/etc/camera/camerabooster.json
