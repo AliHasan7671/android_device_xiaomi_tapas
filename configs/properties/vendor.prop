@@ -196,6 +196,11 @@ vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
+debug.sf.frame_rate_multiple_threshold=60
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=80
+ro.surface_flinger.set_touch_timer_ms=200
 
 # Displayfeature
 ro.vendor.all_modes.colorpick_adjust=true
