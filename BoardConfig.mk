@@ -98,7 +98,6 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=4e00000.dwc3
 
 BOARD_KERNEL_CMDLINE := \
-    video=vfb:640x400,bpp=32,memsize=3072000 \
     rcu_nocbs=all \
     rcutree.enable_rcu_lazy=1 \
 
