@@ -352,13 +352,6 @@ PRODUCT_PACKAGES += \
     libsfplugin_ccodec_utils.vendor \
     libplatformconfig
 
-# Media stagefright
-PRODUCT_PACKAGES += \
-    libstagefrighthw:64 \
-    libstagefright_omx.vendor:64 \
-    libstagefright_softomx.vendor:64 \
-    libstagefright_softomx_plugin.vendor:64
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -386,13 +379,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.topaz.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.topaz.rc
 
-# OMX
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxCore
-
 # Overlays
-
 PRODUCT_PACKAGES += \
     ApertureResTapas \
     CarrierConfigResTapas \
