@@ -43,19 +43,19 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.soundtrigger@2.3-impl
+    android.hardware.audio@7.1-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.soundtrigger@2.3-impl:64
 
 PRODUCT_PACKAGES += \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    libbatterylistener
+    audio.primary.default:64 \
+    audio.r_submix.default:64 \
+    audio.usb.default:64 \
+    libbatterylistener:64
 
 PRODUCT_PACKAGES += \
-    audioadsprpcd \
-    libsndcardparser
+    audioadsprpcd:64 \
+    libsndcardparser:64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
@@ -94,15 +94,15 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio-V2-ndk.vendor \
-    audio.bluetooth.default \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.bluetooth.audio-V1-ndk.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libbluetooth_audio_session
+    android.hardware.bluetooth.audio-impl:64 \
+    android.hardware.bluetooth@1.0.vendor:64 \
+    android.hardware.bluetooth.audio-V2-ndk.vendor:64 \
+    audio.bluetooth.default:64 \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor:64 \
+    vendor.qti.hardware.bluetooth.audio-V1-ndk.vendor:64 \
+    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor:64 \
+    libbluetooth_audio_session:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -114,17 +114,17 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.2-impl-qti:64 \
+    android.hardware.boot@1.2-impl-qti.recovery:64 \
     android.hardware.boot@1.2-service
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.4-impl:64 \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
-    libdng_sdk.vendor \
+    libdng_sdk.vendor:64 \
     libgui_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
@@ -217,7 +217,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libunwindstack.vendor
+    libunwindstack.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -345,18 +345,19 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
+    libavservices_minijail:64 \
+    libavservices_minijail.vendor:64 \
+    libplatformconfig:64 \
     libcodec2_hidl@1.0.vendor \
     libsfplugin_ccodec_utils.vendor \
     libplatformconfig
 
 # Media stagefright
 PRODUCT_PACKAGES += \
-    libstagefrighthw \
-    libstagefright_omx.vendor \
-    libstagefright_softomx.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefrighthw:64 \
+    libstagefright_omx.vendor:64 \
+    libstagefright_softomx.vendor:64 \
+    libstagefright_softomx_plugin.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -436,13 +437,11 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libcurl.vendor \
-    libjson \
+    libjson:64 \
     libjsoncpp.vendor \
-    libqti_vndfwk_detect.vendor \
-    libqti_vndfwk_detect_vendor \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti.vendor \
-    libvndfwk_detect_jni.qti.vendor
+    libqti_vndfwk_detect.vendor:64 \
+    libqti_vndfwk_detect_vendor:64 \
+    libvndfwk_detect_jni.qti.vendor:64
 
 # QTI service tracker
 PRODUCT_PACKAGES += \
@@ -528,7 +527,7 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti-v2 \
-    libpsi.vendor
+    libpsi.vendor:64
 
 # Trusted User Interface
 PRODUCT_PACKAGES += \
@@ -573,9 +572,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd-V1-ndk.vendor \
     android.hardware.wifi.supplicant-V1-ndk.vendor \
     hostapd \
-    libwpa_client \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
+    libwpa_client:64 \
+    libwifi-hal-ctrl:64 \
+    libwifi-hal-qcom:64 \
     wpa_supplicant \
     wpa_supplicant.conf
 
