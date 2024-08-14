@@ -113,27 +113,27 @@ void vendor_load_properties() {
     struct sysinfo sys;
     sysinfo(&sys);
 
-    if (sys.totalram > 5072ull * 1024 * 1024) {
+    if (sys.totalram > 6144ull * 1024 * 1024) {    // Check if RAM is more than 6 GB
         heapstartsize = "16m";
         heapgrowthlimit = "256m";
         heapsize = "512m";
         heaptargetutilization = "0.5";
         heapminfree = "8m";
         heapmaxfree = "32m";
-    } else if (sys.totalram > 3072ull * 1024 * 1024) {
+    } else if (sys.totalram >= 4096ull * 1024 * 1024) {    // Check if RAM is more than 4 GB
+        heapstartsize = "16m";
+        heapgrowthlimit = "256m";
+        heapsize = "512m";
+        heaptargetutilization = "0.5";
+        heapminfree = "8m";
+        heapmaxfree = "32m";
+    } else {
         heapstartsize = "8m";
         heapgrowthlimit = "192m";
         heapsize = "512m";
         heaptargetutilization = "0.6";
         heapminfree = "8m";
         heapmaxfree = "16m";
-    } else {
-        heapstartsize = "16m";
-        heapgrowthlimit = "256m";
-        heapsize = "512m";
-        heaptargetutilization = "0.5";
-        heapminfree = "8m";
-        heapmaxfree = "32m";
     }
 
     property_override("dalvik.vm.heapstartsize", heapstartsize);
