@@ -64,6 +64,14 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
+        vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "setsockopt: 1" "${2}" || echo "setsockopt: 1" >> "${2}"
+            ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
+            ;;
     esac
 }
 
