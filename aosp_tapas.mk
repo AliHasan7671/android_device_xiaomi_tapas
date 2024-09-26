@@ -23,6 +23,6 @@ PRODUCT_MODEL := Redmi Note 12 4G
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tapas_global-user 13 TKQ1.221114.001 V816.0.2.0.UMTMIXM release-keys"
+    PRIVATE_BUILD_DESC="tapas_global-user 13 TKQ1.221114.001 V816.0.4.0.UMTMIXM release-keys"
 
-BUILD_FINGERPRINT := Redmi/tapas_global/tapas:13/TKQ1.221114.001/V816.0.2.0.UMTMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/tapas_global/tapas:13/TKQ1.221114.001/V816.0.4.0.UMTMIXM:user/release-keys
