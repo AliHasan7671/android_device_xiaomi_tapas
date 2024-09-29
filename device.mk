@@ -214,6 +214,11 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.xiaomi \
+    android.hardware.biometrics.fingerprint-V2-ndk.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    com.fingerprints.extension@1.0.vendor \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
     libunwindstack.vendor:64
 
 PRODUCT_COPY_FILES += \
