@@ -44,6 +44,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.security.keymint-service-qti': blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 
+    ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so', 'vendor/etc/qcril_database/upgrade/config/6.0_config.sql'): blob_fixup()
+        .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', rb'persist.vendor.radio.poweron_ign'),
+
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
 
