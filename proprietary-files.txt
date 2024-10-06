@@ -1571,9 +1571,7 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Seccomp
 vendor/etc/seccomp_policy/atfwd@2.0.policy
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
