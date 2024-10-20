@@ -8,4 +8,7 @@
     <dimen name="fingerprint_dot_radius">0dp</dimen>
     <dimen name="fingerprint_pulse_radius">0dp</dimen>
 
+    <!-- Show Force LTE_CA toggle -->
+    <bool name="config_showForceLteCaToggle" translatable="false">true</bool>
+
 </resources>
