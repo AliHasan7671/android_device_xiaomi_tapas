@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tapas.mk
+    $(LOCAL_DIR)/feather_tapas.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_tapas-user \
-    aosp_tapas-userdebug \
-    aosp_tapas-eng
+    feather_tapas-user \
+    feather_tapas-userdebug \
+    feather_tapas-eng
