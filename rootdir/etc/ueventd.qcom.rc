@@ -572,3 +572,6 @@ subsystem mem_buf_vm
 # hdmi cec hal
 /dev/cec*                                            0660    system  system
 /sys/devices/platform/soc/984000.i2c/i2c-0/0-002b    get_hpd_stat    0660   system   system
+
+# Battery
+/sys/class/qcom-battery                                 input_suspend                   0660    system  system
