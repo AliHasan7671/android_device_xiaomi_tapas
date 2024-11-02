@@ -481,7 +481,9 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libhidlbase_shim
+    libhidlbase_shim \
+    libinput_shim \
+    libgui_shim
 
 # Shipping API
 SHIPPING_API_LEVEL := 33

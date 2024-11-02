@@ -1810,9 +1810,8 @@ system_ext/lib/libwfdcommonutils.so
 system_ext/lib/libwfdconfigutils.so
 system_ext/lib/libwfddisplayconfig.so
 system_ext/lib/libwfdmminterface.so
-system_ext/lib/libwfdmmsink.so
 system_ext/lib/libwfdmmsrc_system.so
-system_ext/lib/libwfdnative.so
+system_ext/lib/libwfdmmsink.so
 system_ext/lib/libwfdrtsp.so
 system_ext/lib/libwfdservice.so
 system_ext/lib/libwfdsinksm.so

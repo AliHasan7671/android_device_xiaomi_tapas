@@ -62,9 +62,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib/libwfdnative.so | system_ext/lib64/libwfdnative.so )
+        system_ext/lib64/libwfdnative.so )
         [ "$2" = "" ] && return 0
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
             ;;
         vendor/lib/hw/audio.primary.bengal.so | vendor/lib64/hw/audio.primary.bengal.so)
         [ "$2" = "" ] && return 0
@@ -93,6 +94,10 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/qms.policy)
             [ "$2" = "" ] && return 0
             grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
+            ;;
+       system_ext/lib64/libwfdmmsrc_system.so | system_ext/lib/libwfdmmsrc_system.so)
+        [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         *)
             return 1
