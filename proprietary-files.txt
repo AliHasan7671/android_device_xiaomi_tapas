@@ -1386,9 +1386,9 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 
 # Radio
-etc/permissions/privapp-permissions-qti.xml
-etc/sysconfig/qti_whitelist.xml
-framework/tcmclient.jar
+system/etc/permissions/privapp-permissions-qti.xml
+system/etc/sysconfig/qti_whitelist.xml
+system/framework/tcmclient.jar
 product/app/uimgbaservice/uimgbaservice.apk
 product/etc/permissions/UimGba.xml
 product/etc/permissions/UimGbaManager.xml
@@ -1795,7 +1795,7 @@ vendor/lib64/hw/vulkan.adreno.so
 vendor/bin/cnss-daemon
 
 # Wi-Fi Display
-framework/WfdCommon.jar
+system/framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
