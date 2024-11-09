@@ -1240,6 +1240,7 @@ vendor/bin/hw/vendor.qti.memory.pasrmanager@1.0-service
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
 vendor/bin/msm_irqbalance
 vendor/bin/vendor.qti.qspmhal@1.0-service
+vendor/etc/powerhint.xml
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
 vendor/etc/init/vendor.qti.hardware.limits-service.rc
 vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc
