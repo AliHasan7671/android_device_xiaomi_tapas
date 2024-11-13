@@ -191,13 +191,6 @@
         <int name="wfc_spn_format_idx_int" value="1" />
         <boolean name="mtk_disable_conference_management_after_srvcc" value="false" />
     </carrier_config>
-    <carrier_config mcc="286" mnc="03">
-        <boolean name="config_restore_participants_presentation" value="true" />
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
-        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
-    </carrier_config>
     <carrier_config mcc="268" mnc="03,89,93,97,98,99">
         <boolean name="config_power_center_5g_save_mode" value="false" />
         <boolean name="hide_wfc_mode_option" value="true" />
@@ -491,11 +484,25 @@
         <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
     </carrier_config>
+
+        <!-- ufone -->
+    <carrier_config mcc="410" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+    </carrier_config>
+
+        <!-- ZonG -->
+    <carrier_config mcc="410" mnc="04">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+    </carrier_config>
+
 	<!-- Telenor -->
     <carrier_config mcc="410" mnc="06">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
     </carrier_config>
+
     <carrier_config mcc="419" mnc="02">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
@@ -1226,8 +1233,15 @@
     <carrier_config mcc="214" mnc="21">
         <boolean name="carrier_5g_switch_available_bool" value="false" />
     </carrier_config>
+    <carrier_config mcc="639" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="639" mnc="02">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="639" mnc="03">
@@ -1517,26 +1531,12 @@
         <boolean name="support_video_conference_call_bool" value="true" />
         <boolean name="disable_emulating_single_party_call_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="286" mnc="01">
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
-        <boolean name="carrier_stk_dialog_timeout_60_second" value="true" />
-    </carrier_config>
-    <carrier_config mcc="286" mnc="02">
-        <boolean name="config_power_center_5g_save_mode" value="false" />
-        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-        <string-array name="carrier_metered_apn_types_strings" num="3">
-            <item value="default" />
-            <item value="dun" />
-            <item value="supl" />
-        </string-array>
-        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
-            <item value="default" />
-            <item value="dun" />
-            <item value="supl" />
-        </string-array>
-        <int name="wfc_spn_format_idx_int" value="1" />
+    <carrier_config mcc="286">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="202" mnc="10">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
