@@ -1017,11 +1017,6 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqtikeymint.so
 
-# Lights
-vendor/bin/hw/vendor.qti.hardware.lights.service
-vendor/etc/init/vendor.qti.hardware.lights.service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
-
 # Listen
 vendor/etc/microphone_characteristics.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa.xml
