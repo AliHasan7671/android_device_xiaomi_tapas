@@ -420,13 +420,6 @@
     </string-array>
 
     <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_usb_regexs instead. -->
-    <string-array name="config_tether_usb_regexs" translatable="false">
-        <item>usb\\d</item>
-        <item>rndis\\d</item>
-    </string-array>
-
-    <!-- This setting is deprecated, please use
          com.android.networkstack.tethering.R.array.config_tether_wifi_regexs instead. -->
     <string-array name="config_tether_wifi_regexs" translatable="false">
         <item>softap0</item>

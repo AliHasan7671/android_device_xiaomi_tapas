@@ -396,6 +396,7 @@ PRODUCT_PACKAGES += \
     ApertureResTapas \
     CarrierConfigResTapas \
     FrameworksResTapas \
+    NcmTetheringOverlay \
     SettingsResTapas \
     SystemUIResTapas \
     TelephonyResTapas \
