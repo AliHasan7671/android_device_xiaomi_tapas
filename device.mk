@@ -157,7 +157,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    DeviceSettings \
+    XiaomiVoIPFix
 
 # Display
 PRODUCT_PACKAGES += \
