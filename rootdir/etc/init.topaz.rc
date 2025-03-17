@@ -1,4 +1,4 @@
-service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.st
+service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.st
     override
     class hal
     user nfc
@@ -17,4 +17,4 @@ on post-fs && property:ro.boot.hwname=topaz
     start stflashtool
 
 on boot && property:ro.boot.hwname=topaz
-    start nfc_hal_service
+    start vendor.st_nfc_hal_service
