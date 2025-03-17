@@ -1611,6 +1611,7 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
 vendor/etc/tzlog.dict
+vendor/lib64/android.hardware.thermal@2.0.so
 -vendor/lib64/liblmthermallistner.so
 -vendor/lib64/libthermalclient.so
 
