@@ -843,11 +843,16 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/quick_charge_type</string>
-
-    <!-- Expected value from fast charging status file  -->
-    <string name="config_oemFastChargerStatusValue" translatable="false">3</string>
+    <!-- Array of:
+         - Path to fast charging status file
+         - Delimiter ";"
+         - Value if fast charging is active
+         Used to detect whether an oem fast charger is active
+         Example: <item>/sys/class/power_supply/battery/fastchg_status;1</item>
+     -->
+     <string-array name="config_oemFastChargerStatusPaths" translatable="false">
+          <item>/sys/class/qcom-battery/quick_charge_type;3</item>
+     </string-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
