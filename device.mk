@@ -148,9 +148,6 @@ PRODUCT_PACKAGES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# DebugFS
-PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     DeviceSettings
@@ -313,6 +310,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+PRODUCT_ENABLE_UFFD_GC := true
 
 # Kernel Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/tapas-kernel/kernel-headers
