@@ -1,5 +1,5 @@
 # All unpinned and pinned blobs are extracted from
-# Redmi/tapas_global/tapas:13/TKQ1.221114.001/OS2.0.9.0.VMTMIXM:user/release-keys unless source is specified
+# Redmi/tapas_global/tapas:15/AQ3A.240829.003/OS2.0.11.0.VMTMIXM:user/release-keys unless source is specified
 
 # ACDB
 vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
