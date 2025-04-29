@@ -503,6 +503,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Soong configs
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_tapas)
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
