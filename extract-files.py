@@ -35,6 +35,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/libnfc-nci.conf': blob_fixup()
        .regex_replace('/data/nfc', '/data/vendor/nfc'),
 
+    'vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc': blob_fixup()
+       .regex_replace(' vendor_ssgtzd', ''),
+
     'vendor/lib64/hw/audio.primary.bengal.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
 
