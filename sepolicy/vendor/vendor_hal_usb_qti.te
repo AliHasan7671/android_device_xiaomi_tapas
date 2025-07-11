@@ -1,0 +1,2 @@
+allow vendor_hal_usb_qti sysfs_udc:dir search;
+allow vendor_hal_usb_qti vendor_sysfs_graphics:dir search;

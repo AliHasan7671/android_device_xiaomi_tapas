@@ -1,8 +1,6 @@
 # Battery
 genfscon sysfs /class/qcom-battery/quick_charge_type                                u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb(/.*)? u:object_r:vendor_sysfs_usb_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery(/.*)? u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/qcom-battery/odm_battery(/.*)?  u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg u:object_r:vendor_sysfs_battery_supply:s0
 
 # Battery wakeup nodes
 genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
@@ -38,16 +36,34 @@ genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2
 # Wakeup
 genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:ant_check/wakeup/wakeup0 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:ant_check_div/wakeup/wakeup1 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup16 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup14 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup18 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup17 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup15 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup/wakeup19 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/b300000.remoteproc-cdsp/wakeup/wakeup19 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup16 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup14 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/b300000.remoteproc-cdsp/wakeup/wakeup16                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup25                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/5800000.qcom,ipa/wakeup/wakeup29                                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup10 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup23 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup14 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup20 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup21 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup12 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup9 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /class/udc u:object_r:sysfs_udc:s0
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup8 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup23 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup8 u:object_r:sysfs_wakeup:s0
+
+# Misc
+genfscon sysfs /power/mem_sleep u:object_r:sysfs_mem_sleep:s0
+

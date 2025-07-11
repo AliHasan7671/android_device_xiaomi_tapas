@@ -7,3 +7,6 @@ allow system_server vendor_hal_micharge_xiaomi_default:binder { call transfer };
 # OEM Fastcharge
 allow system_server sysfs_wakeup:file r_file_perms;
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+
+allow system_server proc:file getattr;
+allow system_server thermal_service:service_manager find;

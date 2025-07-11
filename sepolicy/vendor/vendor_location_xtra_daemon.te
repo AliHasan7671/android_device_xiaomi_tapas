@@ -1,0 +1,2 @@
+allow vendor_location_xtra_daemon vendor_sysfs_soc_sensitive:file read;
+

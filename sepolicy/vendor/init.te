@@ -1,3 +1,5 @@
 allow init proc:file { setattr };
 allow init hal_fingerprint_default:process ptrace;
+allow init sysfs:file setattr;
+allow init vold_prepare_subdirs_exec:file getattr;
 set_prop(init, vendor_fp_prop)

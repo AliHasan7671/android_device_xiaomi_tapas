@@ -1,0 +1,5 @@
+allow kernel dm_device:blk_file open;
+allow kernel dm_device:blk_file read;
+allow kernel sysfs_dt_firmware_android:dir search;
+allow kernel sysfs_dt_firmware_android:file getattr;
+allow kernel sysfs_dt_firmware_android:file open;
