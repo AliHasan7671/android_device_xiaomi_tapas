@@ -32,7 +32,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/STFlashTool': blob_fixup()
         .add_needed('libbase_shim.so'),
 
-    'vendor/etc/libnfc-nci.conf': blob_fixup()
+    ('vendor/etc/libnfc-nci.conf' ,'vendor/etc/libnfc-hal-st.conf'): blob_fixup()
        .regex_replace('/data/nfc', '/data/vendor/nfc'),
 
     'vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc': blob_fixup()
