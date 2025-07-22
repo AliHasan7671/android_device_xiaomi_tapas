@@ -1,5 +1,5 @@
 # All unpinned and pinned blobs are extracted from
-# Redmi/tapas_global/tapas:15/AQ3A.240829.003/OS2.0.11.0.VMTMIXM:user/release-keys unless source is specified
+# Redmi/tapas_global/tapas:13/TKQ1.221114.001/V816.0.4.0.UMTMIXM:user/release-keys unless source is specified
 
 # ACDB
 vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
@@ -766,15 +766,19 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 # GNSS
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
+vendor/bin/garden_app
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
+vendor/bin/ssgtzd
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
+vendor/bin/xtwifi-inet-agent
 vendor/etc/apdr.conf
 vendor/etc/batching.conf
+vendor/etc/cacert_location.pem
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gps.conf
@@ -784,19 +788,22 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/shsusrd.rc
+vendor/etc/init/ssgtzd.rc
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
+vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
--vendor/lib/libloc_base_util.so;DISABLE_DEPS
--vendor/lib/libloc_mq_client.so;DISABLE_DEPS
--vendor/lib/liblowi_common.so;DISABLE_DEPS
 vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so
 vendor/lib64/libbatching.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
+vendor/lib64/libgarden.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
@@ -811,10 +818,8 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_api_wds.so
--vendor/lib64/libloc_base_util.so;DISABLE_DEPS
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_eng_hub.so
--vendor/lib64/libloc_mq_client.so;DISABLE_DEPS
 vendor/lib64/libloc_qwes_iface.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/libloc_util.so
@@ -827,7 +832,6 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblowi_client.so
--vendor/lib64/liblowi_common.so;DISABLE_DEPS
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmapdata_api.so
@@ -836,6 +840,9 @@ vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libxtadapter.so
+vendor/lib64/libxtwifi_server_protocol.so
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so
+vendor/lib64/vendor.qti.gnss-V2-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
 
 # Graphics
@@ -887,6 +894,7 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # Hotword Enrollment
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
@@ -1169,7 +1177,6 @@ system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
 system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
--system_ext/lib/vendor.qti.qccsyshal_aidl-V1-ndk.so;DISABLE_DEPS
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqcc_netstats.so
@@ -1180,7 +1187,6 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
--system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so;DISABLE_DEPS
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-trd
 vendor/bin/qcc-vendor
@@ -1295,7 +1301,6 @@ vendor/etc/vintf/manifest/android.hardware.radio.config.xml
 vendor/etc/vintf/manifest/deviceinfo-saidl.xml
 vendor/etc/vintf/manifest/qms-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
--vendor/lib/vendor.qti.hardware.radio.qtiradio-V9-ndk.so;DISABLE_DEPS
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
@@ -1396,7 +1401,7 @@ vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.3.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
--vendor/lib64/vendor.qti.hardware.radio.qtiradio-V9-ndk.so;DISABLE_DEPS
+-vendor/lib64/vendor.qti.hardware.radio.qtiradio-V8-ndk.so;DISABLE_DEPS
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
@@ -1425,6 +1430,7 @@ vendor/etc/seccomp_policy/gnss@2.0-base.policy
 vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/etc/seccomp_policy/qms.policy
